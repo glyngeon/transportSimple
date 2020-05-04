@@ -1,0 +1,212 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  .container-body {
+    margin: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    .form-class {
+      padding: 1rem;
+      .dropdown-parent {
+        display: flex;
+        flex-flow: row;
+        padding: 5vw 2vw;
+        .from-dropdown {
+          display: flex;
+          flex-flow: column;
+          margin: 0.5rem 2vw;
+          width: 50%;
+          transition: all 0.5s;
+          label {
+            color: #9597a6;
+            margin: 0.5rem 0;
+            font-weight: 300;
+            text-align: left;
+            float: left;
+            transition: all 0.5s;
+          }
+          .input-field-from {
+            outline: none;
+            height: 2rem;
+            border-radius: 10px;
+            border: 2px solid var(--gray);
+            padding: 0.5rem 1rem;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  outline: none;
+  height: 2.5rem;
+  color: var(--primary-color1);
+  background-color: var(--background-color1);
+  border-radius: 10px 10px 2px 2px;
+  border: 1px solid var(--background-color2);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  p {
+    margin: 0.2rem 1rem 0;
+  }
+  &:hover {
+    background-color: #e4e4e4;
+  }
+}
+
+.add-new-location {
+  display: flex;
+  flex-flow: row;
+  border: 1px solid var(--gray);
+  border-radius: 2px 2px 10px 10px;
+  input {
+    outline: none;
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    transition: all 0.5s;
+    width: 60%;
+    border: 1px solid var(--background-color2);
+    border-radius: 2px 2px 10px 10px;
+  }
+  .save {
+    margin: auto;
+    cursor: pointer;
+    img {
+      width: 1.2rem;
+      height: 1rem;
+    }
+  }
+  .cancel {
+    margin: auto;
+    cursor: pointer;
+    img {
+      width: 1.2rem;
+      height: 1rem;
+    }
+  }
+}
+
+// PROGRESS BAR CSS
+
+.progress-bar-container {
+  margin: 5vw 8vw;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+}
+.progress-bar-body {
+  display: flex;
+  flex-flow: column;
+  margin: 0.1rem;
+  width: 45%;
+  p {
+    font-size: 12px;
+  }
+}
+.progress-status {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.arrow-line {
+  display: flex;
+  flex-flow: row;
+  .point-arrow {
+    background-color: var(--green);
+  }
+  .arrow {
+    border: solid var(--primary-color1);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .line {
+    border-bottom: 2px solid var(--primary-color1);
+    width: 20%;
+    margin: 0 -4px 3px 1px;
+  }
+}
+.myprogress-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #4caf50;
+  margin: 0.2rem 0;
+}
+
+.point {
+  background-color: var(--orange-light);
+  border-radius: 100%;
+  width: 0.5rem;
+  border: 1px solid var(--primary-color1);
+  height: 0.5rem;
+}
+
+// list container
+
+.list-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 5vw 0;
+  .list-body {
+    display: flex;
+    flex-flow: column;
+  }
+  .total-travel-list {
+    min-height: 2.5rem;
+    margin: 0.3rem;
+    height: auto;
+    text-align: left;
+    background-color: var(--background-color1);
+    color: var(--primary-color1);
+    .jouney-location {
+      padding: 0.7rem;
+      span {
+        font-weight: 600;
+      }
+    }
+    & :hover {
+      background-color: var(--background-color2);
+    }
+  }
+}
+
+.button-submit {
+  outline: none;
+  height: 2.5rem;
+  color: var(--primary-color1);
+  background-color: var(--background-color2);
+  border-radius: 10px;
+  border: 1px solid var(--primary-color1);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  float: right;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  & :hover {
+    color: var(--white);
+    background-color: var(--primary-color1);
+  }
+}
+
+.error-msg {
+  color: var(--orange-light);
+  margin: 0.2rem;
+}

@@ -1,0 +1,107 @@
+.top-navbar-container {
+  position: relative;
+  background-color: var(--background-color1);
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid var(--background-color2);
+  transition: all 0.5s ease-in-out;
+  .top-navbar-body {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    .logo-container {
+      margin: 0.5rem;
+      .brand-logo {
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        width: 12rem;
+        cursor: pointer;
+      }
+    }
+    .link-container {
+      margin: 0;
+      display: flex;
+      flex-flow: row;
+      .link-item {
+        margin: 0 0.8rem;
+        padding-bottom: 0.5rem;
+        .link {
+          color: var(--primary-color1);
+          margin: 0.62rem 1rem;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      .extra-margin {
+        margin: 0 8.8rem 0 0.8rem;
+      }
+    }
+    // menu toggle button css
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: var(--primary-color1);
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2 {
+      opacity: 0;
+    }
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -7px);
+      transform: rotate(45deg) translate(-9px, -7px);
+    }
+    // menu toggle button css (end)
+  }
+  .link-container {
+    margin: 8px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out;
+    .link-item {
+      margin: 0.5rem 0;
+      padding-bottom: 0.5rem;
+      cursor: pointer;
+      .link {
+        color: var(--primary-color1);
+        margin: 0.62rem 1rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.active,
+.link-item:hover {
+  border-bottom: 0.2rem solid var(--primary-color1);
+}
+
+@media all and (max-width: 800px) {
+  .top-navbar-container {
+    .top-navbar-body {
+      .link-container {
+        display: none;
+      }
+      .menu-toggle {
+        display: inline-block;
+      }
+    }
+    .link-container {
+      display: flex;
+    }
+  }
+}

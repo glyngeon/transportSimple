@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "transportSimple"
+    }
+  },
+  "defaultProject": "transportSimple",
+  "cli": {
+    "analytics": "c3d6f699-a535-4003-9970-8e98c82ef813"
+  }
 }

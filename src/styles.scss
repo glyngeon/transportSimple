@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: Arial;
+}
+body,
+html {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  // --green: #10833b;
+  --background-color1: #f9f9f9;
+  --background-color2: #efefef;
+  --primary-color1: #595fab;
+
+  --green: #037f4a;
+  --orange: #ff6600;
+  --blue: #3d8bce;
+  --white: #fff;
+  --gray: #8d99ae;
+
+  --orange-light: #ecb83d;
+  --gray-dark: #1d2d2e;
+  --green-dark: #037f4a;
+  --green-dark-light: #4edda6;
+  --green-light: #00e483;
+  --green-light-light: #73ffd1;
+}
